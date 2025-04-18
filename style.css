@@ -15,18 +15,18 @@ html {
 h1 {
   font-size: 50px;
   line-height: 64px;
-  color: #222;
+  color: #1b1414;
 }
 
 h2 {
   font-size: 46px;
   line-height: 54px;
-  color: #222;
+  color: #191515;
 }
 
 h4 {
   font-size: 20px;
-  color: #222;
+  color: #0f0c0c;
 }
 
 h6 {
@@ -68,7 +68,7 @@ button.white {
   color: #fff;
   background-color:transparent;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 1px solid #cdc3c3;
   outline: none;
   transition: 0.2s;
 }
