@@ -18,6 +18,14 @@ const toggle = document.getElementById('dark-toggle');
 toggle.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
+let cartCount = 0;
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', () => {
+        cartCount++;
+        document.getElementById('cart-count').innerText = cartCount;
+    });
+});
+
 
 
 
