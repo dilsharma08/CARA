@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --bg-color: #fff;
+  --text-color: #222;
+  --main-color: #088178;
+  --box-bg: #f7f7f7;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --main-color: #00c8b4;
+  --box-bg: #1e1e1e;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1311,4 +1325,16 @@ marquee{
       padding: 20px;
   }
 
+}
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem;
+  background: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
 }
