@@ -14,18 +14,25 @@ if (close) {
     })
     
 }
-const toggle = document.getElementById('dark-toggle');
-toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-});
-let cartCount = 0;
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', () => {
-        cartCount++;
-        document.getElementById('cart-count').innerText = cartCount;
-    });
-});
+  const toggle = document.getElementById("darkModeToggle");
+  const body = document.body;
 
+  // Apply saved theme on load
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+  }
+
+  // Toggle dark mode on button click
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // Save preference
+    if (body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  });
 
 
 
