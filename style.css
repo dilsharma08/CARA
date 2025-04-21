@@ -334,13 +334,13 @@ body {
 }
 
 #banner h2{
-  color: #fff;
+  color: #940303;
   font-size: 30px;
   padding: 10px 0;
 }
 
 #banner h2 span {
-  color: #ef3636;
+  color: #a00606;
 }
 
 #banner button:hover{
@@ -425,7 +425,7 @@ body {
 }
 
 #banner3 h2 {
-  color: #fff;
+  color: #0c0b0b;
   font-weight: 900;
   font-size: 22px;
 }
