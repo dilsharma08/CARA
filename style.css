@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Spartan", sans-serif;
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
+.dark-mode .section-p1,
+.dark-mode .section-m1 {
+  background-color: #1e1e1e;
 }
 
 html {
@@ -15,18 +23,18 @@ html {
 h1 {
   font-size: 50px;
   line-height: 64px;
-  color: #222;
+  color: #1b1414;
 }
 
 h2 {
   font-size: 46px;
   line-height: 54px;
-  color: #222;
+  color: #191515;
 }
 
 h4 {
   font-size: 20px;
-  color: #222;
+  color: #0f0c0c;
 }
 
 h6 {
@@ -68,7 +76,7 @@ button.white {
   color: #fff;
   background-color:transparent;
   cursor: pointer;
-  border: 1px solid #fff;
+  border: 1px solid #cdc3c3;
   outline: none;
   transition: 0.2s;
 }
@@ -326,13 +334,13 @@ body {
 }
 
 #banner h2{
-  color: #fff;
+  color: #940303;
   font-size: 30px;
   padding: 10px 0;
 }
 
 #banner h2 span {
-  color: #ef3636;
+  color: #a00606;
 }
 
 #banner button:hover{
@@ -417,7 +425,7 @@ body {
 }
 
 #banner3 h2 {
-  color: #fff;
+  color: #0c0b0b;
   font-weight: 900;
   font-size: 22px;
 }
@@ -1311,4 +1319,16 @@ marquee{
       padding: 20px;
   }
 
+}
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0.5rem;
+  background: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
 }
